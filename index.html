@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudoprincipal">
+        <div class="areaconvenios">
+            <div class="convenio2  pequeno2">
+                <div class="btn-Link top"  data-url="#" target="_blank"> Saiba mais</div>
+                <img src="/img/caixa_imagem.png" alt=""></div>
+            <div class="convenio2 pequeno2">
+                <img src="/img/caixa_imagem(02).png" alt=""></div>
+        </div>
+        <div class="areaconvenios">
+            <div class="convenio2 pequeno2">
+                <div class="btn-Link" data-url="#" target="_blank"> Saiba mais</div>
+                <img src="/img/senac.png" alt=""></div>
+            <div class="convenio2 centralizar">
+                <h1 class="tituloOutrosBeneficios" data-url="#" target="_blank">Venha Conhecer Outros Benefícios</h1>
+                <div class="btn_Convenios" data-url="#" target="_blank">Tecnomed</div>
+                <div class="btn_Convenios" data-url="#" target="_blank">Magno Russo Consultoria</div>
+                <div class="btn_Convenios" data-url="#" target="_blank">Debora Britos Cuidados</div>
+                <div class="btn_Convenios" data-url="#" target="_blank">CLÍNICA SAÚDE E DESENVOLVIMENTO (CSD)</div>
+                <div class="btn_Convenios" data-url="#" target="_blank">KLINI</div>
+                <div class="btn_Convenios" data-url="#" target="_blank">GMAR ASSPONTEC SOLAR</div>
+                <div class="btn_Convenios" data-url="https://www.youtube.com/" target="_blank">HELUZ CLÍNICA DE SAÚDE ACESSÍVEL</div>
+            </div>
+        </div>
+   <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnLinks = document.querySelectorAll(".btn-Link");
+            var btnConvenios = document.querySelectorAll(".btn_Convenios")
+            btnLinks.forEach(function(btnLink) {
+                btnLink.addEventListener("click", function() {
+                    var url = this.getAttribute("data-url");
+                    window.open(url, "_blank");
+                });
+            });
+
+            btnConvenios.forEach(function(btnConvenios) {
+                btnConvenios.addEventListener("click", function() {
+                    var url = this.getAttribute("data-url");
+                    window.open(url, "_blank");
+                });
+            });
+        });
+</script>
+</body>
+</html>
