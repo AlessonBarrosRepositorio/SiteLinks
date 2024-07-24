@@ -1,18 +1,101 @@
 *{
     margin: 0;
-    border:0;
+    border: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     position: relative;
-    width: 1920px;
-    height: 1080px;
+    top: 10px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .conteudoprincipal{
-    width: 100% !important;
-    height:100%;
+    width: 80% !important;
+    height: 95%;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.areaconveniosTop{
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    position: relative;
+    top: 0;
+}
+
+.areaconveniosDown{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+.titulo{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    text-align: center;
+}
+
+.paddingTitulos{   
+    padding: 20px;
+}
+
+.tituloConteudo{
+    width: 100%;
+    height: 80%;
+    background-color: blueviolet;
+}
+
+.areaLinks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.tituloAreaLinks{
+    background-color: brown;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.areaBotoes{
+    height: 100%;
+    width: 50%;
+    background-color: coral;
+}
+
+.btn_Convenios{
+    width: 100%;
+    height: 9%;
+    padding: 20px;
+    margin: 5px;
+    background-color: blue;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn_Convenios:hover{
+    background-color: aqua;
+    cursor: pointer;
 }
