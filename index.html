@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resposivo.css">
 </head>
 <body>
     <div class="conteudoprincipal">
@@ -29,24 +31,6 @@
                 <div class="btn_Convenios" data-url="https://www.youtube.com/" target="_blank">HELUZ CLÍNICA DE SAÚDE ACESSÍVEL</div>
             </div>
         </div>
-   <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var btnLinks = document.querySelectorAll(".btn-Link");
-            var btnConvenios = document.querySelectorAll(".btn_Convenios")
-            btnLinks.forEach(function(btnLink) {
-                btnLink.addEventListener("click", function() {
-                    var url = this.getAttribute("data-url");
-                    window.open(url, "_blank");
-                });
-            });
-
-            btnConvenios.forEach(function(btnConvenios) {
-                btnConvenios.addEventListener("click", function() {
-                    var url = this.getAttribute("data-url");
-                    window.open(url, "_blank");
-                });
-            });
-        });
-</script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
