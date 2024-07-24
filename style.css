@@ -93,9 +93,10 @@ body{
     border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
+    color: white;
 }
 
 .btn_Convenios:hover{
-    background-color: aqua;
+    background-color: darkblue;
     cursor: pointer;
 }
